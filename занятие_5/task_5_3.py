@@ -1,0 +1,25 @@
+money = int(input("Введите, какое количество монет вы дадите ведьмаку: "))
+coin_25 = 25
+num_25 = 0
+coin_10 = 10
+num_10 = 0
+coin_5 = 5
+num_5 = 0
+coin_1 = 1
+num_1 = 0
+sum_num = 0
+while sum_num != money:
+    if sum_num + coin_25 <= money:
+        sum_num += coin_25
+        num_25 += 1
+    elif sum_num + coin_10 <= money:
+        sum_num += coin_10
+        num_10 += 1
+    elif sum_num + coin_5 <= money:
+        sum_num += coin_5
+        num_5 += 1
+    elif sum_num + coin_1 <= money:
+        sum_num += coin_1
+        num_1 += 1
+sum_num = num_25 + num_10 + num_5 + num_1
+print(f'''Вы должны отдать {sum_num} монет. {num_25} - номиналом "25", {num_10} - номиналом "10", {num_5} - номиналом "5", {num_1} - номиналом "1".''')

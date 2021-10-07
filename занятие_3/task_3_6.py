@@ -1,0 +1,5 @@
+first = input("Введите первое число: ")
+second = input("Введите второе число: ")
+first = int(first)
+second = int(second)
+print(f'{first} плюс {second} равно {first+second}')

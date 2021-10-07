@@ -1,0 +1,5 @@
+ch = input("Введите трехзначное число: ")
+a = int(ch[0])
+b = int(ch[1])
+c = int(ch[2])
+print(a+b+c)
